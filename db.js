@@ -13,13 +13,6 @@ const pizzaSchema = new Schema({
   size: [Number]
 });
 const Pizza = mongoose.model('Pizza', pizzaSchema);
-// const orderSchema = new Schema({
-//   user:  String,
-//   pizzaName: String,
-//   pizzaSize: Number,
-//   address: String
-// });
-// const Order = mongoose.model('Order', orderSchema);
 
 // Add pizzas
 Pizza.insertMany([

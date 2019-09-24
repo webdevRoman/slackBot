@@ -57,9 +57,3 @@ $(document).ready(function () {
     });
   });
 });
-
-
-// $($(".orders-item__user")[index]).html(msg[index].user);
-// $($(".orders-item__pizza")[index]).html(msg[index].pizzaName);
-// $($(".orders-item__size")[index]).html(msg[index].pizzaSize + 'см');
-// $($(".orders-item__address")[index]).html(msg[index].address);

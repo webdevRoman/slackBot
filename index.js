@@ -20,7 +20,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-// DB
+
+/********** DB **********/
 mongoose.connect('mongodb://localhost/slackbot', { useNewUrlParser: true });
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
@@ -42,7 +43,8 @@ const orderSchema = new Schema({
 });
 const Order = mongoose.model('Order', orderSchema);
 
-// Server
+
+/********** Server **********/
 const PORT = 4390;
 app.listen(PORT, function () {
   console.log("Server listening on: http://localhost:%s", PORT);
@@ -184,7 +186,8 @@ app.post('/command', function (req, res) {
   res.send('Your ngrok tunnel is up and running!');
 });
 
-// Bot
+
+/********** Bot **********/
 const toInitCap = (string) => { return string.replace(string.substr(0, 1), string.substr(0, 1).toUpperCase()); }
 
 (async () => {
