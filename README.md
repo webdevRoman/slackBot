@@ -25,7 +25,7 @@
   Write `npm install` and wait until the installation would be over.
   Next terminal command is `node db`. It will create a database. After that press Ctrl+C.
 
-9. Start local server with the command `npm run start`. You are great! Now bot is ready to be tested.
+9. Start local server with the command `npm start`. You are great! Now bot is ready to be tested.
   To make an order send him message that looks like `@(botname) заказ`. Then follow bot’s instructions.
 
 10. To test SPA visit website using the link that you got in the Terminal after you started local server (it should be http://localhost:4390).
