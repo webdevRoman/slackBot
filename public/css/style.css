@@ -1,0 +1,141 @@
+body {
+  margin: 0;
+  background-color: #303841;
+  font-family: 'Arial', sans-serif;
+  color: #fff;
+}
+
+* {
+  box-sizing: border-box
+}
+
+img {
+  width: 100%;
+}
+
+ul {
+  padding-inline-start: 0;
+}
+
+.header {
+  background-color: #eeeeee;
+  color: #000;
+  padding: 20px 50px;
+  display: flex;
+  align-items: center;
+}
+
+.header-img {
+  width: 70px;
+  margin-right: 20px;
+}
+
+.orders {
+  padding: 50px;
+}
+
+.orders-title {
+  font-size: 26px;
+  font-weight: normal;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.orders-list {
+  width: 80%;
+  background-color: #eee;
+  color: #000;
+  font-size: 20px;
+  margin: 0 auto;
+  list-style: none;
+}
+
+.orders-item {
+  border-bottom: 1px solid #ff5722;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.orders-item:last-child {
+  border-bottom: none
+}
+
+.orders-item__data {
+  margin-right: 20px;
+}
+
+.orders-item__text {
+  margin-bottom: 10px;
+}
+
+.orders-item__status {
+  transition: 1s;
+}
+
+.status_new {
+  color: #ff5722
+}
+
+.orders-item__btns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.orders-item__btns-title {
+  margin-bottom: 20px;
+}
+
+.orders-item__btn {
+  display: block;
+  background-color: #ff5722;
+  padding: 15px 30px;
+  width: 200px;
+  border: none;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-bottom: 10px;
+  outline: none;
+}
+
+.orders-item__btn:hover {
+  background-color: #ca461d;
+}
+
+@media (max-width: 768px) {
+  .orders-list {
+    width: 90%;
+    font-size: 18px;
+  }
+  .orders-item {
+    padding: 20px 30px;
+    flex-direction: column
+  }
+  .orders-item__data {
+    margin-bottom: 20px;
+  }
+  .orders-item__btns-title {
+    margin-bottom: 10px;
+  }
+  .orders-item__btn {
+    padding: 15px;
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+}
+@media (max-width: 576px) {
+  .orders-list {
+    font-size: 16px;
+  }
+  .orders-item__btn {
+    width: 150px;
+    padding: 15px;
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+}
