@@ -1,13 +1,10 @@
 const express = require('express');
-// const request = require('request');
 const path = require('path');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const { RTMClient } = require('@slack/rtm-api');
 const { WebClient } = require('@slack/web-api');
 
-// const clientId = '734369315170.749182687635';
-// const clientSecret = '3d3abf101798b7abaee0caba64cfe798';
 const token = 'xoxb-734369315170-747883779762-74DbDg2qLDabNwG2eWwEWK7c';
 
 const rtm = new RTMClient(token);
@@ -147,43 +144,6 @@ app.post('/', function (req, res) {
   );
 });
 
-// Local dev
-// // This route handles get request to a /oauth endpoint. We'll use this endpoint for handling the logic of the Slack oAuth process behind our app.
-// app.get('/oauth', function (req, res) {
-//   // When a user authorizes an app, a code query parameter is passed on the oAuth endpoint. If that code is not there, we respond with an error message
-//   if (!req.query.code) {
-//     res.status(500);
-//     res.send({
-//       "Error": "Looks like we're not getting code."
-//     });
-//     console.log("Looks like we're not getting code.");
-//   } else {
-//     // If it's there...
-
-//     // We'll do a GET call to Slack's `oauth.access` endpoint, passing our app's client ID, client secret, and the code we just got as query parameters.
-//     request({
-//       url: 'https://slack.com/api/oauth.access',
-//       qs: {
-//         code: req.query.code,
-//         client_id: clientId,
-//         client_secret: clientSecret
-//       },
-//       method: 'GET',
-
-//     }, function (error, response, body) {
-//       if (error) {
-//         console.log(error);
-//       } else {
-//         res.json(body);
-//         console.log(body);
-//       }
-//     });
-//   }
-// });
-
-// app.post('/command', function (req, res) {
-//   res.send('Your ngrok tunnel is up and running!');
-// });
 
 // Bot
 const toInitCap = (string) => { return string.replace(string.substr(0, 1), string.substr(0, 1).toUpperCase()); }
