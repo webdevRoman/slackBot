@@ -15,11 +15,9 @@
 
 6. Download Git repository as ZIP (https://github.com/webdevRoman/slackbot) and unzip it.
 
-7. In the file index.js change fields “clientId”, “clientSecret” and “token” (9-11 lines in the file).
+7. In the file index.js change field “token” (8th line in the file).
   <img align="center" src="https://github.com/webdevRoman/slackbot/blob/descr/3.jpg" alt="9-11 lines in index.js">
-  You can find these keys on pages “Basic information” …
-  <img align="center" src="https://github.com/webdevRoman/slackbot/blob/descr/4.jpg" alt="Client ID and Client Secret on Basic information">
-  … and “OAuth & Permissions”.
+  You can find this key on the page “OAuth & Permissions”.
   <img align="center" src="https://github.com/webdevRoman/slackbot/blob/descr/5.jpg" alt="Bot User Oauth Access Token on OAuth & Permissions">
   Save the file.
 
