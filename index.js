@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 const { RTMClient } = require('@slack/rtm-api');
 const { WebClient } = require('@slack/web-api');
 
-const token = 'xoxb-734369315170-747883779762-74DbDg2qLDabNwG2eWwEWK7c';
+const token = 'xoxb-************-************-************************';
 
 const rtm = new RTMClient(token);
 const web = new WebClient(token);
